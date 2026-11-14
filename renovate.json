@@ -1,0 +1,13 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended"
+  ],
+  "packageRules": [
+    {
+      "description": "El Dockerfile usa a veces imágenes viejas a propósito para probar themis (avisos de vulnerabilidades): Renovate no lo toca.",
+      "matchFileNames": ["Dockerfile"],
+      "enabled": false
+    }
+  ]
+}
